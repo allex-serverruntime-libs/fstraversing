@@ -1,0 +1,33 @@
+{
+  "name": "allex_fstraversingserverruntimelib",
+  "version": "1.0.0",
+  "description": "AllexJS server run-time lib for in-order file system traversing",
+  "main": "index.js",
+  "scripts": {
+    "test": "allex-mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allex-serverruntime-libs/fstraversing.git"
+  },
+  "dependencies": {
+    "allex_treetraversinglowlevellib": "1.x",
+    "allex_nodehelpersserverruntimelib": "1.x",
+    "allex_fsutilsserverruntimelib": "1.x"
+  },
+  "keywords": [
+    "ecosystem:AllexJS",
+    "fs",
+    "traversing",
+    "server",
+    "run",
+    "time",
+    "lib"
+  ],
+  "author": "Andrija Petrovic <andrija.hers@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allex-serverruntime-libs/fstraversing/issues"
+  },
+  "homepage": "https://github.com/allex-serverruntime-libs/fstraversing#readme"
+}
