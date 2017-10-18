@@ -7,18 +7,11 @@ function createFsTraverser (lib) {
     Path = Node.Path,
     fs = Node.Fs;
 
-  function pathOf (thingy) {
-    if (lib.isArray(thingy)) {
-      return Path.join.apply(Path, thingy);
-    }
-    return thingy;
-  }
-
   function FsTraverser (rootname, depth, cb, filemask) {
     if (lib.isVal(filemask) && !lib.isString(filemask)) {
       throw new lib.Error('FILEMASK_NOT_A_STRING', 'filemask supplied must be a string like "df"');
     }
-    TreeTraverser.call(this, pathOf(rootname), depth, cb);
+    TreeTraverser.call(this, FsUtils.surePath(rootname), depth, cb);
     this.filemask = filemask;
   }
   lib.inherit(FsTraverser, TreeTraverser);
